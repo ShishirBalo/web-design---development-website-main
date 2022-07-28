@@ -258,25 +258,60 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                        <h5 class="modal-title" id="staticBackdropLabel">Login Now</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <form class="row g-3">
-                                            <div class="col-auto">
-                                                <label for="staticEmail2" class="visually-hidden">Email</label>
-                                                <input type="text" readonly class="form-control-plaintext"
-                                                    id="staticEmail2" value="email@example.com">
+                                            <div class="col-md-4">
+                                                <label for="validationDefault01" class="form-label">First name</label>
+                                                <input type="text" class="form-control" id="validationDefault01"
+                                                    value="Mark" required>
                                             </div>
-                                            <div class="col-auto">
-                                                <label for="inputPassword2" class="visually-hidden">Password</label>
-                                                <input type="password" class="form-control" id="inputPassword2"
-                                                    placeholder="Password">
+                                            <div class="col-md-4">
+                                                <label for="validationDefault02" class="form-label">Last name</label>
+                                                <input type="text" class="form-control" id="validationDefault02"
+                                                    value="Otto" required>
                                             </div>
-                                            <div class="col-auto">
-                                                <button type="submit" class="btn btn-primary mb-3">Confirm
-                                                    identity</button>
+                                            <div class="col-md-4">
+                                                <label for="validationDefaultUsername"
+                                                    class="form-label">Username</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                                    <input type="text" class="form-control"
+                                                        id="validationDefaultUsername"
+                                                        aria-describedby="inputGroupPrepend2" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationDefault03" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="validationDefault03"
+                                                    required>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="validationDefault04" class="form-label">State</label>
+                                                <select class="form-select" id="validationDefault04" required>
+                                                    <option selected disabled value="">Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="validationDefault05" class="form-label">Zip</label>
+                                                <input type="text" class="form-control" id="validationDefault05"
+                                                    required>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="invalidCheck2" required>
+                                                    <label class="form-check-label" for="invalidCheck2">
+                                                        Agree to terms and conditions
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary" type="submit">Submit form</button>
                                             </div>
                                         </form>
                                     </div>
@@ -293,7 +328,88 @@
             </div>
         </section>
         <!-- Ready to join section end -->
-
+        <!-- Questions section start -->
+        <section class="container my-5">
+            <div class="d-flex justify-content-center">
+                <div>
+                    <h2 class="text-center">Frequently Asked Questions</h2>
+                    <p class="text-center">It is a long established fact that a reader will be distracted by the
+                        readable content of a page when looking at its layout.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is the difference between Flexbox and grid?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is
+                                that flexbox was designed for layout in one dimension - either a row or a column. Grid
+                                was designed for two-dimensional layout - rows, and columns at the same time.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Which is best between Bootstrap and Tailwind?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                Bootstrap's utility and layout classes provide you with everything you need to style a
+                                responsive webpage. With Tailwind, however, you are much more involved in styling the
+                                webpage because you end up having to create your own components using the utility
+                                classes that the framework offers.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What do you mean by CSS box model?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                In CSS, the term "box model" is used when talking about design and layout. The CSS box
+                                model is essentially a box that wraps around every HTML element. It consists of:
+                                margins, borders, padding, and the actual content.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingfour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                What are semantic tags in HTML?
+                            </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                A semantic element clearly describes its meaning to both the browser and the developer.
+                                Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+                                        Examples of semantic elements: <form> , <table> , and <article> - Clearly
+                                                    defines its content.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Questions section end -->
 
 
     </main>
