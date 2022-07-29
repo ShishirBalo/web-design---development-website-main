@@ -8,6 +8,9 @@
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- style css link -->
+    <link rel="stylesheet" href="styles.css/stye.css">
+    <!-- fonts awesome link -->
     <script src="https://kit.fontawesome.com/6466b7324e.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,7 +18,7 @@
     <!-- header section start -->
     <header class="container">
         <!-- navigation ber -->
-        <section class="container">
+        <section>
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand fs-2 fw-bold" href="#">Design & Development</a>
@@ -61,7 +64,7 @@
         </section>
         <!-- header section end -->
         <!-- Carousel section start -->
-        <section class="container my-5">
+        <section class="my-5">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -75,25 +78,31 @@
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="images/cover/cover-1.png" class="d-block w-100 opacity-50 img-fluid" alt="...">
                         <div class="carousel-caption d-none d-md-block ">
-                            <h1>Get Started Digital Learning</h1>
-                            <p>Some representative placeholder content for the first slide.</p>
-                            <button type="button" class="btn btn-info">Get Started</button>
+                            <div>
+                                <h1>Get Started Digital Learning</h1>
+                                <p>Some representative placeholder content for the first slide.</p>
+                                <button type="button" class="btn btn-info">Get Started</button>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                         <img src="images/cover/cover-2.jpg" class="d-block w-100 opacity-50 img-fluid" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1>Get Started Digital Learning</h1>
-                            <p>Some representative placeholder content for the first slide.</p>
-                            <button type="button" class="btn btn-info">Get Started</button>
+                            <div class="my-5">
+                                <h1>Get Started Digital Learning</h1>
+                                <p>Some representative placeholder content for the first slide.</p>
+                                <button type="button" class="btn btn-info">Get Started</button>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="images/cover/cover-3.jpg" class="d-block w-100 opacity-50 img-fluid" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1>Get Started Digital Learning</h1>
-                            <p>Some representative placeholder content for the first slide.</p>
-                            <button type="button" class="btn btn-info">Get Started</button>
+                            <div class="my-5">
+                                <h1>Get Started Digital Learning</h1>
+                                <p>Some representative placeholder content for the first slide.</p>
+                                <button type="button" class="btn btn-info">Get Started</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,9 +121,9 @@
         <!-- Carousel section end -->
     </header>
     <!-- body section start -->
-    <main>
+    <main class="container">
         <!-- Courses section start -->
-        <section class="container my-5">
+        <section class="my-5">
             <div class="d-flex justify-content-center">
                 <div>
                     <h2 class="text-center">Discover Our Popular <br>
@@ -126,7 +135,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row row-cols-2 my-5">
+            <div class="row row-lg-cols-2 row-cals-md-1 my-5">
                 <div class="card mb-3 border border-0" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -228,15 +237,15 @@
                     </div>
                 </div>
             </div>
-            <div class="container text-center">
+            <div class="text-center">
                 <a class="btn btn-primary" href="#" role="button">See More Courses</a>
             </div>
         </section>
         <!-- Courses section end -->
         <!-- Ready to join section start -->
-        <section class="container rounded-1 bg-info my-5">
+        <section class="rounded-1 bg-info my-5">
             <div class="p-5">
-                <div class="d-flex flex-row">
+                <div class="d-flex flex-row d-md-block d-sm-block">
                     <div class="px-5">
                         <h2>Ready to join?</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a
@@ -330,7 +339,7 @@
         </section>
         <!-- Ready to join section end -->
         <!-- Questions section start -->
-        <section class="container my-5">
+        <section class="my-5">
             <div class="d-flex justify-content-center">
                 <div>
                     <h2 class="text-center">Frequently Asked Questions</h2>
@@ -410,7 +419,7 @@
         </section>
         <!-- Questions section end -->
         <!-- trusted companies start -->
-        <section class="container my-5">
+        <section class="container my-5 d-md-none d-none d-sm-block">
             <h1 class="text-center my-4">Trusted by over 800+ companies</h1>
             <div class="d-flex justify-content-between">
                 <a href=""><img src="images/company/company-1.png" alt=""></a>
